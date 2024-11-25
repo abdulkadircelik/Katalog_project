@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../../core/constants/colors_constants.dart';
+
 class LoginScreen extends ConsumerStatefulWidget {
   const LoginScreen({super.key});
 
@@ -58,10 +60,10 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               children: [
                 // Logo
                 Center(
-                  child: SvgPicture.asset(
-                    'assets/icons/logo.svg',
-                    width: 60,
-                    height: 60,
+                  child: Image.asset(
+                    'assets/images/logo.png',
+                    width: 100,
+                    height: 100,
                     color: AppColors.purple,
                   ),
                 ),

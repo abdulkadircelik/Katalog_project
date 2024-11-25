@@ -1,12 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:katalog_project/features/splash/presentation/pages/login_screen.dart';
 
-// Renk sabitleri
-class AppColors {
-  static const darkBlue = Color(0xFF1D1B4C);
-  static const purple = Color(0xFF6D61F2);
-  static const orange = Color(0xFFFA7022);
-}
+import '../../../../core/constants/colors_constants.dart';
 
 final splashTimerProvider =
     StateNotifierProvider<SplashTimerNotifier, bool>((ref) {
